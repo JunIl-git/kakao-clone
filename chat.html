@@ -27,14 +27,66 @@
       <a href="./index.html">
         <i class="fas fa-arrow-left fa-2x"></i>
       </a>
-      <h1 class="header__title">홍길동</h1>
+      <h1 class="header__title">Best Friend</h1>
     </div>
     <div class="header__header-column">
-      <span class="header__icon">
+      <div class="header__icon">
         <i class="fas fa-search"></i>
+      </div>
+      <div class="header__icon">
         <i class="fas fa-bars"></i>
-      </span>
+      </div>
     </div>
   </header>
-
+  <main class="chat">
+    <ul class="chat__messages">
+      <span class="chat__timestamp">Friday, January 11, 2019</span>
+      <li class="incoming-message message">
+        <img src=".http://placehold.it/150x150" class="g-avatar message__avatar">
+        <div class="message__content">
+          <span class="message__author"> Best Friend</span>
+          <div class="message__buble">
+            A lot of congrats on your engagement
+          </div>
+        </div>
+        <span class="message__timestamp">15:19</span>
+      </li>
+      <li class="incoming-message message">
+        <span class="message__timestamp">15:22</span>
+        <div class="message__content">
+          <div class="message__buble">
+            Thanks a lot dude! We well celebrate a lot when I get there in February!!!
+          </div>
+        </div>
+      </li>
+      <li class="incoming-message message">
+        <img src=".http://placehold.it/150x150" class="g-avatar message__avatar">
+        <div class="message__content">
+          <span class="message__author"> Best Friend</span>
+          <div class="message__buble">
+            Sounds great!!!
+          </div>
+        </div>
+        <span class="message__timestamp">15:23</span>
+      </li>
+    </ul>
+  </main>
+  <div class="message__write">
+    <div class="message__write-column">
+      <i class="far fa-plus-square fa-2x"></i>
+    </div>
+    <div class="message__write-column">
+      <input type="text" placeholder="send message" class="chat__write-input">
+    </div>
+    <div class="message__write-column">
+      <span class="massage__write-icon">
+        <i class="far fa-smile"></i>
+      </span>
+      <span class="massage__write-icon">
+        <i class="fas fa-microphone"></i>
+      </span>
+    </div>
+  </div>
 </body>
+
+</html>
