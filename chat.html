@@ -7,10 +7,10 @@
   <title>Chat | kakao clone</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="chats-body">
   <div class="status-bar">
     <div class="status-bar__column">
       <span class="status-bar__clock">13:53</span>
@@ -39,11 +39,11 @@
       </span>
     </div>
   </header>
-  <main class="chat">
+  <main class="chat-screen">
     <ul class="chat__messages">
       <span class="chat__timestamp">Friday, January 11, 2019</span>
       <li class="incoming-message message">
-        <img src="./avatar-2.jpg" class="m-avatar message__avatar">
+        <img src="./avatar-2.jpg" class="m-avatar message__avatar" />
         <div class="message__content">
           <span class="message__author"> Best Friend</span>
           <div class="message__buble">
@@ -52,34 +52,40 @@
         </div>
         <span class="message__timestamp">15:19</span>
       </li>
-      <li class="incoming-message message">
+      <li class="sent-message message">
         <span class="message__timestamp">15:22</span>
         <div class="message__content">
           <div class="message__buble">
-            Thanks a lot dude! We well celebrate a lot when I get there in February!!!
+            Thanks a lot dude!
           </div>
         </div>
       </li>
       <li class="incoming-message message">
-        <img src="./avatar-2.jpg" class="m-avatar message__avatar">
+        <img src="./avatar-2.jpg" class="m-avatar message__avatar" />
         <div class="message__content">
           <span class="message__author"> Best Friend</span>
           <div class="message__buble">
-            Sounds great!!!
+            coding is very exciting!!
           </div>
         </div>
-        <span class="message__timestamp">15:23</span>
+        <span class="message__timestamp">15:19</span>
+      </li>
+      <li class="sent-message message">
+        <span class="message__timestamp">15:22</span>
+        <div class="message__content">
+          <div class="message__buble">
+            I think so!!
+          </div>
+        </div>
       </li>
     </ul>
   </main>
-  <div class="message__write">
-    <div class="message__write-column">
-      <i class="far fa-plus-square fa-2x"></i>
+  <div class="chat__write--container">
+    <input type="text" placeholder="send message" class="chat__write chat__write-input" />
+    <div class="chat__icon-left chat__icon">
+      <i class="far fa-plus-square"></i>
     </div>
-    <div class="message__write-column">
-      <input type="text" placeholder="send message" class="chat__write-input">
-    </div>
-    <div class="message__write-column">
+    <div class="chat__icon-right chat__icon">
       <span class="massage__write-icon">
         <i class="far fa-smile"></i>
       </span>
@@ -87,6 +93,9 @@
         <i class="fas fa-microphone"></i>
       </span>
     </div>
+  </div>
+  <div class="bigScreen">
+    <span class="bigScreen__text">Please make your screen small ! </span>
   </div>
 </body>
 
